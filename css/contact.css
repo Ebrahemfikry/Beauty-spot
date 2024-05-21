@@ -1,0 +1,38 @@
+main .content header {
+    position: absolute;
+}
+iframe{
+    margin: 350px 0 50px 0;
+}
+.content .form{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.content .form fieldset{
+    width: 49%;
+    margin: 1% 0;
+    border: 0;
+}
+.content .form fieldset input{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.content .form fieldset input[type = "submit"]{
+    width: 200px;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: var(--thr-color);
+    transition: all .3s;
+    color: var(--main-color);
+}
+.content form fieldset input[type = "submit"]:hover{
+    background: var(--fiv-color);
+}

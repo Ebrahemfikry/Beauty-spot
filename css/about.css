@@ -1,0 +1,104 @@
+header{
+    top: 0;
+    background: url(../images/banner2.jpg) no-repeat center/cover fixed;
+    height: 50vh;
+    width: 100%;
+    position: absolute !important;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000075;
+    z-index: 2222;
+}
+header h3{
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+    color: var(--main-color)
+}
+/*  */
+/* start about ############## */
+.about{
+    margin-top: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.about h3{
+    position: relative;
+    margin: 10px;
+}
+.about h3::before{
+    content:"";
+    position: absolute;
+    width: 2px;
+    height: 35px;
+    left: -8px;
+    top: 0px;
+    background: var(--thr-color);
+    z-index: 2222;
+}
+.about p{
+    margin: 10px;
+    font-size: 18px;
+    color: var(--fou-color)
+}
+.about .box{
+    width: 49%;
+    margin: 1% 0;
+}
+.about .box img{
+    width: 100%;
+}
+/* end about ############## */
+
+/* start latest ############ */
+.latest h4{
+    margin-top: 30px;
+}
+/* end latest ############ */
+@media only screen and (max-width: 600px){
+    .about{
+        margin-top: 350px;
+        flex-direction: column;
+    }
+    .about .box{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px){
+    .about{
+        margin-top: 350px;
+        flex-direction: column;
+    }
+    .about .box{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px){
+    .about{
+        margin-top: 350px;
+        flex-direction: row;
+    }
+    .about .box{
+        width: 49%;
+    }
+}
+@media only screen and (min-width: 992px){
+    .about{
+        margin-top: 350px;
+        flex-direction: row;
+    }
+    .about .box{
+        width: 49%;
+    }
+}
